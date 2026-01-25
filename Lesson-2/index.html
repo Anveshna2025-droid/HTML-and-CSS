@@ -5,16 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        button{
-            background-color: red;
+        /* the dot before subscribe-button indicates that it is a class selector */
+        .subscribe-button{
+            background-color: rgb(200, 0, 0);
+            /* rbg:red green blue */
+            /* property:value */
             color: white;
-            border-radius: 20px;
+            border:none;
+            height:36px;
+            width:80px;
+            border-radius:10px;
+            cursor:pointer;
+            margin-right:10px;
+        }
+        .join-button{
+            background-color: white;
+            color:blue;
+            border:1px blue solid;
+            height:30px;
+            width:60px;
+            cursor:pointer;
+            margin-right:10px;
+            border-radius:5px
+        }
+        .tweet-button{
+            background-color: rgb(29, 161, 242);
+            color:white;
+            border:none;
+            height:30px;
+            width:60px;
+            border-radius:15px;
+            cursor:pointer;
         }
     </style>
 </head>
 <body>
     <!-- in this lesson we will learn about css -->
-     <button>subscribe</button>
-
+     <button class="subscribe-button">subscribe</button>
+     <!-- by adding class="subscribe-button" to the button element , we are applying the styles defined in the .subscribe-button class in the style tag -->
+        <!-- CSS stands for Cascading Style Sheets -->
+        <!-- CSS is used to style html elements -->
+        <!-- CSS can be added in 3 ways :
+            1. Inline CSS
+            2. Internal CSS
+            3. External CSS -->
+            <!-- Inline CSS : we can add css directly to an html element using the style attribute -->
+            <!-- <element style="property:value;"> -->
+            <!-- example : <button style="background-color:red; color:white; border:none; height:20px;">subscribe</button> -->
+                <!-- drawback of inline css : we have to add css to each element separately which is not efficient -->
+                <!-- Internal CSS : we can add css inside the <style> tag in the <head> section of the html document -->
+                <!-- example : see the style tag in the head section of this document -->
+                <!-- drawback of internal css : we can only use the styles in this document only -->
+                    <!-- External CSS : we can create a separate css file and link it to the html document using the <link> tag in the <head> section -->
+                    <!-- example : <link rel="stylesheet" href="styles.css"> -->
+                    <!-- advantage of external css : we can use the same css file for multiple html documents -->
+    <!-- all proterties in style tag explained : -->
+    <!-- background-color : sets the background color of the element -->
+    <!-- color : sets the text color of the element -->
+    <!-- border : sets the border of the element -->
+    <!-- height : sets the height of the element -->
+    <!-- width : sets the width of the element -->
+    <!-- border-radius : sets the rounded corners of the element -->
+    <!-- cursor : sets the type of cursor to be displayed when hovering over the element -->  
+     <button class="join-button"> JOIN</button> 
+        <!-- if i 
+     will create another button with same styles as above , why ? css styles are applied to all button elements in the document          -->
+     <!-- to avoid that , we'll create a class in css -->
+      <button class="tweet-button"> Tweet</button>
+      properties used in the doc :
+        <!-- margin-right : sets the right margin of the element -->
+         <!-- border-radius : sets the rounded corners of the element  -->
+        <!-- --Homework--
+        create a uber button  -->
+        <button class="uber-button">Request now</button>
+        <!-- create a amazon button -->
+        <button class="amazon-button">  Add to cart</button>
+        <!-- create an account on github button -->
+        <button class="github-button"> Sign up </button>
+        <!-- create a bootstrap button -->
+        <button class="bootstrap-button"> Get started </button>
+        <button class="bootstrap_download-button"> Download </button>
+        <!-- create a linkedin button -->
+        <button class="linkedin-button"> Apply on company website </button>
+        <button class="save-button"> Save </button>
 </body>
 </html>
