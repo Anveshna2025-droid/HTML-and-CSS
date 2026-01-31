@@ -6,18 +6,76 @@
     <title>Document</title>
 </head>
 <style>
+    
+    p{
+        font-family:arial;
+        margin-top:0;
+        margin-bottom:0;
+    }
  .video-title{
-     font-family:arial;
      font-weight:bold;
      font-size:18px; 
-     width:300px;
-     line-height:24px;
-      
+     width:280px;
+     line-height:24px;  
+     margin-bottom:5px; 
+ }
+ .video-stats{
+    font-size:14px;
+    color: rgb(96,96,96);
+    margin-bottom:20px;
+ }
+ .video-author{
+    font-size:14px;
+    color:rgb(96,96,96);
+    margin-bottom:20px;
+ }
+ .video-description{
+    font-size: 14px;
+    color:rgb(96,96,96);
+    width:280px;
+    line-height:22px;
+    margin-bottom:100px;
+ }
+ .apple-text{
+    margin-bottom:50px;
+    font-size:14px;
+    background-color:rgb(227, 65, 64);
+    color:white;
+    padding: 20px 10px 20px 10px;
+    text-align:center;
+ }
+ .shop-underline:hover{
+    cursor:pointer;
+    text-decoration:underline;
+ }
+ .span-example{
+    color:red;
+    margin-left:20px;
+ }
+ .span-example:hover{
+    text-decoration: underline;
+    cursor: pointer;
  }
 </style>
 <body>
     <!-- in this lesson we wil work with text  -->
      <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
      <!-- testing for repo -->
+      <p class="video-stats">
+        3.4M views &middot; 6 months ago
+      </p>
+      <p class="video-author"> Marques Brownlee &#10004;</p>
+      <p class="video-description">
+        Talking tech and AI on the heels of Google I/O. Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!
+      </p>
+      <!-- css specificity - determined by seelctors
+      -{} the dash is denoting the selector here .
+      the .smth is more specific cuz it is very specificilly for the class only  -->
+      <p class="apple-text">
+        Shop early for the best selection of holiday favourites. <span class="shop-underline">Shop now 	&#62;</span>
+      </p>
+      <p>
+        Shop early for the <strong>best selection</strong> of <u>holiday</u>  favourites. <span class="span-example">Shop now </span>
+      </p>
 </body>
 </html>
